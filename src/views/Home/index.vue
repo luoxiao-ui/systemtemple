@@ -38,8 +38,9 @@ export default {
   }
 
   .navbox {
-    height: 40px;
+    // height: 40px;
     width: 100%;
+    padding: 10px 0 0 0;
   }
 
   .mainbox {
