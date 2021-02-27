@@ -4,7 +4,7 @@
                background-color="#545c64"
                text-color="#fff"
                active-text-color="#ffd04b"
-               default-active="/home">
+               :default-active="routername">
           <el-menu-item v-for="(item,index) in list"
                         :key="index"
                         :index="item.value"
@@ -26,7 +26,8 @@ export default {
             {label: 'DMS', value: '/dms'},
             {label: 'WCS', value: '/wcs'},
             {label: 'ERP', value: '/erp'}
-        ]
+        ],
+        routername: this.$route.path
     }
 },
   watch: {},
@@ -35,6 +36,7 @@ export default {
   mounted() {},
   methods: {
     routergo(item){
+      if(this.$route.path === item.value) return
       this.$router.push(item.value)
     }
   },

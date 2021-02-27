@@ -13,7 +13,8 @@
             }
         },
 
-        getCookie: function(name, t='string'){
+        getCookie: function(name){
+            if(!localStorage[name]) return
             let o = JSON.parse(localStorage[name])
             if(!o){
                 return localStorage[name]

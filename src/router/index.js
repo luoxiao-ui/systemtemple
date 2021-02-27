@@ -16,9 +16,11 @@ const routes = [
       {
         path: '/home',
         name: 'Homeindex',
+        classify: 'class',
         component: ()=> import('@/views/Home/component/index.vue'),
         meta: {
-          title: '首页'
+          title: '首页',
+          tabindex: 1,
         }
       }
     ]
@@ -33,7 +35,24 @@ const routes = [
         name: 'Basesetindex',
         component: ()=> import('@/views/Baseset/index.vue'),
         meta: {
-          title: '基础配置'
+          title: '基础配置',
+          tabindex: 1,
+        }
+      },
+      {
+        path: '/baseset/goodsfile',
+        name: 'Goodsfile',
+        component: ()=> import('@/views/Baseset/goodsfile/index'),
+        meta: {
+          title: '商品档案'
+        }
+      },
+      {
+        path: '/baseset/goodsdept',
+        name: 'Goodsdept',
+        component: ()=> import('@/views/Baseset/goodsdept/index'),
+        meta: {
+          title: '商品部门'
         }
       }
     ]
@@ -48,7 +67,8 @@ const routes = [
         name: 'Wmsindex',
         component: ()=> import('@/views/WMS/index.vue'),
         meta: {
-          title: 'WMS'
+          title: 'WMS',
+          tabindex: 1,
         }
       }
     ]
@@ -63,7 +83,8 @@ const routes = [
         name: 'Dmsindex',
         component: ()=> import('@/views/DMS/index.vue'),
         meta: {
-          title: 'DMS'
+          title: 'DMS',
+          tabindex: 1,
         }
       }
     ]
@@ -78,7 +99,8 @@ const routes = [
         name: 'Wcsindex',
         component: ()=> import('@/views/WCS/index.vue'),
         meta: {
-          title: 'WCS'
+          title: 'WCS',
+          tabindex: 1,
         }
       }
     ]
@@ -93,7 +115,8 @@ const routes = [
         name: 'Erpindex',
         component: ()=> import('@/views/ERP/index.vue'),
         meta: {
-          title: 'ERP'
+          title: 'ERP',
+          tabindex: 1
         }
       }
     ]
