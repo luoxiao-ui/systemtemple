@@ -10,6 +10,8 @@ import '@/utils/init.js'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 
+//commit test
+
 new Vue({
   router,
   store,
